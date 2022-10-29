@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    
+        <body>
+        <script src="js/jqueymin.js"> </script>
+<script>
+ $("#login-button").click(function(event){
+		 event.preventDefault();
+	 
+	 $('form').fadeOut(100);
+	 $('.wrapper').addClass('form-success');
+});
+</script>
+   
+<div class="wrapper">
+	<div class="container">
+		<h1>Bienvenido</h1>
+		<form class="form" action="svtLoginPC">
+			<input type="text" placeholder="Username" id="usuario" name="usuario">
+			<input type="password" placeholder="Password" id="password" name="password">
+			<button type="submit" id="login-button">Ingresar</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+    </body>
+</html>
